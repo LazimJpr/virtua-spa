@@ -1,0 +1,14 @@
+.inicio {
+    display: flex;
+}
+
+.menu {
+    background-color: #1e1e1ebd;
+    min-width: 220px;
+    min-height: 100vh;
+}
+
+.conteudo {
+    flex: auto;
+    padding: 10px;
+}

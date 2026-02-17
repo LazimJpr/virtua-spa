@@ -1,0 +1,13 @@
+li {
+    list-style-type: none;
+    padding: 16px;
+    margin: 5px 12px;
+    border-radius: 10px;
+    transition: background-color 0.1s;
+
+
+    &:hover{
+        background-color: #3b3b3b6e;
+        cursor: pointer;
+    }
+}
