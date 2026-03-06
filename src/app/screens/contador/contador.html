@@ -1,1 +1,10 @@
-<p>contador works!</p>
+<div class="container">
+    <span class="contador">
+        {{ count() }}
+    </span>
+</div>
+<button 
+    (click)="increment()"
+    class="add-button">
+    incrementar
+</button>
