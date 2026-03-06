@@ -1,0 +1,69 @@
+.landing-page {
+    display: flex;
+    height: 100vh;
+}
+
+.chamada{
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+.chamada h1{
+    font-size: 53px;
+    font-weight: bold;
+}
+
+.chamada p{
+    margin-top: -20px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+
+.botoes{
+    display: flex;
+    gap: 15px;
+}
+
+.botao{
+    width: 200px;
+}
+
+.login-button{
+    border-style: inherit;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgb(255, 254, 255);
+    color: rgb(98, 0, 255);
+    font-weight: bold;
+}
+
+.register-button{
+    border-style: inherit;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgb(98, 0, 255);
+    color: white;
+    font-weight: bold;
+}
+
+.landing-image{
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.top-container{
+    display: flex;
+    flex-direction: row;
+    margin: 15vw;
+    gap: 100px;
+    align-content: center;
+    justify-items: center;
+}
