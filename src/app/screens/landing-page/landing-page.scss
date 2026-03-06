@@ -1,5 +1,6 @@
 .landing-page {
     display: flex;
+    flex-direction: column;
     height: 100vh;
 }
 
@@ -7,18 +8,18 @@
     align-items: start;
     justify-content: start;
     text-align: start;
-    width: 350px;
+    width: 400px;
     margin-bottom: 30px;
 }
 
 .chamada h1{
-    font-size: 53px;
+    font-size: 60px;
     font-weight: bold;
 }
 
 .chamada p{
     margin-top: -20px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: normal;
 }
 
@@ -30,40 +31,80 @@
 
 .botao{
     width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    &:hover{
+        cursor: pointer;
+    }
+
 }
 
 .login-button{
     border-style: inherit;
-    border-radius: 15px;
     padding: 10px;
     background-color: rgb(255, 254, 255);
     color: rgb(98, 0, 255);
     font-weight: bold;
+    &:hover{
+        transition-duration: 0.5s;
+        //transition-delay: 0.1s;
+        background-color: rgba(255, 254, 255, 0.753);
+        color: rgb(98, 0, 255);
+    }
 }
 
 .register-button{
     border-style: inherit;
-    border-radius: 15px;
     padding: 10px;
     background-color: rgb(98, 0, 255);
     color: white;
     font-weight: bold;
+    &:hover{
+        transition-duration: 0.5s;
+        //transition-delay: 0.1s;
+        background-color:rgb(118, 33, 255);
+    }
 }
 
-.landing-image{
+.landing-image {
     width: 50%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
+    max-height: 300px; 
+    object-fit: contain;
 }
-
 
 
 .top-container{
+
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: row;
-    margin: 15vw;
-    gap: 100px;
-    align-content: center;
-    justify-items: center;
+    padding: 10vh;
+    gap: 400px;
+    
 }
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style-type: none;
+    font-weight: bold;
+
+}
+
+.separator{
+    width: 1px;
+    height: 40px;
+    border-style: inherit;
+    background-color: rgb(255, 255, 255);
+}
+
