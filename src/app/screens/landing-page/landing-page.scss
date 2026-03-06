@@ -108,3 +108,14 @@
     background-color: rgb(255, 255, 255);
 }
 
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+    :hover{
+        background-color: rgba(0, 0, 0, 0.534);
+        cursor: pointer;
+    }
+}

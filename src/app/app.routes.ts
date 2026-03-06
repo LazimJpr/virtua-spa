@@ -11,11 +11,9 @@ export const routes: Routes = [
     {
         path: '',
         component: LandingPage,
-        children: [
-            { path: 'login', component: Login },
-            { path: 'register', component: Register }
-        ]
     },
+    { path: 'login', component: Login },
+    { path: 'register', component: Register },
     {
         path: 'app',
         component: Page,

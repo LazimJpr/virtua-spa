@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { MenuItem } from '../../components/shared/menu-item/menu-item';
+import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-landing-page',
-  imports: [MenuItem],
+  imports: [MenuItem, RouterLink, RouterOutlet],
   templateUrl: './landing-page.html',
   styleUrl: './landing-page.scss',
 })

@@ -5,13 +5,21 @@
                 <img src="/src/assets/images/logo-virtua.png" alt="Logo VC" class="logo-image">
             </div>
             <ul class="nav-links">
-                <app-menu-item label="Home" route="/"></app-menu-item>
-                <hr class="separator">
-                <app-menu-item label="Features" route="/"></app-menu-item>
-                <hr class="separator">
-                <app-menu-item label="Pricing" route="/"></app-menu-item>
-                <hr class="separator">
-                <app-menu-item label="Contact" route="/"></app-menu-item>
+                <div class="menu">
+                    <app-menu-item label="Home" route="/app"></app-menu-item>
+                    <hr class="separator">
+                </div>
+                <div class="menu">
+
+                    <app-menu-item label="Features" route="/app"></app-menu-item>
+                    <hr class="separator">
+                </div>
+                <div class="menu">
+                    <app-menu-item label="Pricing" route="/app"></app-menu-item>
+                    <hr class="separator">
+                </div>
+
+                <app-menu-item label="Contact" route="/app"></app-menu-item>
             </ul>
         </nav>
     </header>
@@ -22,8 +30,8 @@
                 <h1>{{ title() }}</h1>
                 <p>{{ subtitle() }}</p>
                 <div class="botoes">
-                    <button class=" botao login-button">Login</button>
-                    <button class="botao register-button">Register</button>
+                    <button class=" botao login-button" [routerLink]="'/login'">Login</button>
+                    <button class="botao register-button" [routerLink]="'/register'">Register</button>
                 </div>
             </div>
             <aside>
