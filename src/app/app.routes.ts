@@ -11,6 +11,7 @@ export const routes: Routes = [
     {
         path: '',
         component: LandingPage,
+        
     },
     { path: 'login', component: Login },
     { path: 'register', component: Register },
