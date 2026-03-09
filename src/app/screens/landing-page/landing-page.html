@@ -2,7 +2,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="/src/assets/images/logo-virtua.png" alt="Logo VC" class="logo-image">
+                <img src="assets/images/logo-virtua.png" alt="Logo VC" class="mini-logo">
             </div>
             <ul class="nav-links">
                 <div class="menu">
@@ -18,11 +18,21 @@
                     <app-menu-item label="Pricing" route="/app"></app-menu-item>
                     <hr class="separator">
                 </div>
+                <div class="menu">
+                    <app-menu-item label="Contact" route="/app"></app-menu-item>
 
-                <app-menu-item label="Contact" route="/app"></app-menu-item>
+                </div>
             </ul>
+            <div class="auth-buttons botoes">
+                <button class="botao login-button" [routerLink]="'/login'">Login</button>
+                <hr class="separator">
+                <button class="botao register-button" [routerLink]="'/register'">Register</button>
+            </div>
         </nav>
+
     </header>
+    <hr class="separator-horizontal">
+
 
     <main>
         <div class="top-container">
@@ -35,7 +45,7 @@
                 </div>
             </div>
             <aside>
-                <img src="/src/assets/images/logo-virtua.png" alt="Logo VC" class="landing-image">
+                <img src="assets/images/logo-virtua.png" alt="Logo VC" class="landing-image">
             </aside>
         </div>
 
